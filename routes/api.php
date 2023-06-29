@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\CoursesController;
 use App\Http\Controllers\Admin\FooterController;
 use App\Http\Controllers\Admin\InformationController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,6 @@ Route::get('/footerdata', [FooterController::class, 'onAllSelect']);
 Route::get('/information', [InformationController::class, 'onAllSelect']);
 //services
 Route::get('/services', [ServiceController::class, 'serviceView']);
+//Projects
+Route::get('/projecthome', [ProjectController::class, 'onSelectThree']);
+Route::get('/projectall', [ProjectController::class, 'onSelectAll']);
