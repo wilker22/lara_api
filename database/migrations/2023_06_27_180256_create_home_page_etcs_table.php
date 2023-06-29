@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('total_student');
             $table->string('total_course');
             $table->string('total_review');
-            $table->string('video_desription');
+            $table->string('video_description');
             $table->string('video_url');
             $table->timestamps();
         });
