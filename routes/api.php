@@ -33,3 +33,4 @@ Route::get('/services', [ServiceController::class, 'serviceView']);
 //Projects
 Route::get('/projecthome', [ProjectController::class, 'onSelectThree']);
 Route::get('/projectall', [ProjectController::class, 'onSelectAll']);
+Route::post('projectdetails', [ProjectController::class, 'projectDetails']);
