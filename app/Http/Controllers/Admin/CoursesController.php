@@ -20,9 +20,10 @@ class CoursesController extends Controller
         return $result;
     }
 
-    public function onSelectDetails()
+    public function onSelectDetails(Request $request)
     {
         $id = $request->input('id');
-        $result = Courses::where
+        $result = Courses::where('id', $id)->get();
+        return $result;
     }
 }
