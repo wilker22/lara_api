@@ -12,9 +12,9 @@ class ContactController extends Controller
     {
         
         $contactArray = json_decode($request->getContent(), true);
-        $name = $contactArray['name'];
-        $email = $contactArray['email'];
-        $message = $contactArray['message'];
+        $name = $contactArray["name"];
+        $email = $contactArray["email"];
+        $message = $contactArray["message"];
         
         $result = Contact::insert([
             'name' => $name,
