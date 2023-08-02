@@ -21,9 +21,9 @@ class ProjectController extends Controller
         return $result;
     }
 
-    public function projectDetails(Request $request)
+    public function projectDetails($projectId)
     {
-        $id = $request->id;
+        $id = $projectId;
         $result = Projects::where('id', $id)->get();
         return $result;
     }

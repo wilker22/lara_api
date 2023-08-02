@@ -34,7 +34,7 @@ Route::get('/services', [ServiceController::class, 'serviceView']);
 //Projects
 Route::get('/projecthome', [ProjectController::class, 'onSelectThree']);
 Route::get('/projectall', [ProjectController::class, 'onSelectAll']);
-Route::post('projectdetails', [ProjectController::class, 'projectDetails']);
+Route::post('/projectdetails/{projectId}', [ProjectController::class, 'projectDetails']);
 //HOME etc
 Route::get('/home/video', [HomePageEtcController::class, 'selectVideo']);
 Route::get('/totalhome', [HomePageEtcController::class, 'selectTotalHome']);

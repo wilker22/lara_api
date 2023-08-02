@@ -15,7 +15,7 @@ class ContactController extends Controller
         $name = $contactArray["name"];
         $email = $contactArray["email"];
         $message = $contactArray["message"];
-        
+        dd($contactArray);
         $result = Contact::insert([
             'name' => $name,
             'email' => $email,
